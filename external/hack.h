@@ -16,17 +16,19 @@ struct Player
     public:
         Player() :
             r_MaxHealth(0),
-            rw_Health(0),
+            r_Health(0),
             r_MaxAmmo(0),
-            rw_Ammo(0),
+            r_Ammo(0),
             r_last_MaxHealth(0),
             r_last_MaxAmmo(0)
         {}
 
         int r_MaxHealth;
-        int rw_Health;
+        int r_Health;
         int r_MaxAmmo;
-        int rw_Ammo;
+        int r_Ammo;
+        int rw_AirJump;
+        int r_MaxAirJump;
 
         int r_last_MaxHealth;
         int r_last_MaxAmmo;
