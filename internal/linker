@@ -1,0 +1,5 @@
+#!/bin/bash
+
+g++ -std=c++14 -fPIC -m64 -c -o internal.o internal.cpp
+
+g++ -std=c++14 -fPIC -m64 internal.o -o internal.so -shared -ldl -lSDL2 -m64
